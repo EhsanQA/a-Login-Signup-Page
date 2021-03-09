@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserLoggedIn">
+   <children>
+      <Label fx:id="helloer" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="60.0" prefHeight="35.0" prefWidth="422.0" text="Hello" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="yourPasswordIs" alignment="CENTER" layoutX="40.0" layoutY="259.0" prefHeight="31.0" prefWidth="521.0" text="Your Password is: ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="yourUsernameIs" alignment="CENTER" layoutX="40.0" layoutY="202.0" prefHeight="31.0" prefWidth="521.0" text="Your Username is: ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="yourIDIs" alignment="CENTER" layoutX="40.0" layoutY="315.0" prefHeight="31.0" prefWidth="521.0" text="Your ID is: ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="LogOut" layoutX="248.0" layoutY="454.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="105.0" style="-fx-background-radius: 15px;" text="Log out" />
+   </children>
+</AnchorPane>

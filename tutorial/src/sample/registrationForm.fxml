@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="573.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrationForm">
+    <children>
+        <Label layoutX="227.0" layoutY="48.0" text="Sign Up">
+            <font>
+                <Font name="System Bold" size="34.0" />
+            </font>
+        </Label>
+        <TextField fx:id="addedUsername" layoutX="202.0" layoutY="166.0" promptText="Enter Username">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="addedPassword" layoutX="202.0" layoutY="218.0" prefHeight="26.0" prefWidth="196.0" promptText="Enter Password">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </PasswordField>
+        <PasswordField fx:id="reEnteredPassword" layoutX="202.0" layoutY="272.0" prefHeight="26.0" prefWidth="196.0" promptText="ReEnter Password">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="backBtn" layoutX="29.0" layoutY="54.0" mnemonicParsing="false" onAction="#goesBackToAdminPage" style="-fx-background-radius: 15px;" text="Back">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="addingBtn" layoutX="266.0" layoutY="393.0" mnemonicParsing="false" onAction="#addTheUser" prefHeight="50.0" prefWidth="69.0" style="-fx-background-radius: 15px;" text="Add">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TextField fx:id="addedID" layoutX="202.0" layoutY="323.0" promptText="Enter ID">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label fx:id="loginError" alignment="CENTER" layoutX="136.0" layoutY="141.0" prefHeight="16.0" prefWidth="330.0" textAlignment="CENTER" textFill="RED" />
+        <Label fx:id="successMessage" alignment="CENTER" layoutX="135.0" layoutY="366.0" prefHeight="16.0" prefWidth="330.0" textAlignment="CENTER" textFill="#69e131" />
+    </children>
+</AnchorPane>

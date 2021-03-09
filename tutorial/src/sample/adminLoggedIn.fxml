@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminLoggedIn">
+   <children>
+      <Label layoutX="184.0" layoutY="50.0" text="Hello Admin">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="addUserBtn" layoutX="227.0" layoutY="224.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="41.0" prefWidth="147.0" style="-fx-background-radius: 15px;" text="Add User" />
+      <Button fx:id="logOut" layoutX="257.0" layoutY="339.0" mnemonicParsing="false" onAction="#logOut" prefHeight="51.0" prefWidth="86.0" style="-fx-background-radius: 15px;" text="Log Out" />
+   </children>
+</AnchorPane>
